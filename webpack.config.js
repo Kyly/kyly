@@ -10,6 +10,7 @@ const extractSass = new ExtractTextPlugin({
 });
 
 const indexHtml = path.resolve(__dirname, 'src/index.js');
+const BUILD_DIR = 'docs';
 
 const getPlugins = () => isDev ? [
     new HtmlWebpackPlugin({
@@ -29,7 +30,7 @@ const config = {
         indexHtml
     ],
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, BUILD_DIR),
         filename: 'bundle.js'
     },
     module: {
