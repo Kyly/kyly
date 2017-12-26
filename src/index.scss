@@ -1,0 +1,18 @@
+@import '_solerize';
+@import '_line-numbers';
+
+.cover-container {
+    display: flex;
+    flex-flow: column;
+    align-items: stretch;
+}
+
+main.main-content {
+    width: 60ch;
+    margin: 4em auto;
+    padding: .5em;
+
+    code > span, pre > span {
+        font-family: 'Source Code Pro', monospace;
+    }
+}
